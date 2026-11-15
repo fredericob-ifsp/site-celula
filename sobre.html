@@ -3,38 +3,53 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#053B2E">
   <title>Sobre | Célula vegetal</title>
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌿</text></svg>">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="index.css">
 </head>
 <body>
 
   <header class="menu">
-    <nav>
+    <nav aria-label="Menu principal">
       <a href="index.html">Início</a>
       <a href="o-que-e.html">O que é</a>
       <a href="estruturas.html">Estruturas</a>
       <a href="comparacao.html">Vegetal x animal</a>
-      <a href="sobre.html" class="ativo">Sobre</a>
+      <a href="sobre.html" class="ativo" aria-current="page">Sobre</a>
     </nav>
   </header>
 
   <main class="conteudo">
     <h1>sobre</h1>
+
     <p>Este site faz parte do trabalho de Biologia do 4º bimestre: maquete de célula vegetal feita com material reciclado.</p>
+
+    <h2>Nossa maquete</h2>
+    <figure class="destaque">
+      <a href="imagens/maquete.jpg" target="_blank" rel="noopener">
+        <img src="imagens/maquete.jpg" alt="Maquete de célula vegetal feita com material reciclado" loading="lazy">
+      </a>
+      <figcaption>Maquete da célula vegetal feita com material reciclado. [Escreva aqui os principais materiais usados]</figcaption>
+    </figure>
 
     <h2>Equipe</h2>
     <ul>
-      <li>Eluiza</li>
-      <li>Frederico</li>
-      <li>Vitória</li>
+      <li>[Nome do aluno 1]</li>
+      <li>[Nome do aluno 2]</li>
+      <li>[Nome do aluno 3]</li>
     </ul>
 
     <h2>Informações</h2>
-    <p>Curso: TÉCNICO EM INFORMÁTICA INTEGRADO AO ENSINO MÉDIO<br>
+    <p>Curso: [nome do curso]<br>
        Disciplina: Biologia<br>
-       Professora: Ana Cristina Gobbo Cesar<br>
+       Professora: [nome]<br>
        Instituição: IFSP, Campus Bragança Paulista</p>
   </main>
 

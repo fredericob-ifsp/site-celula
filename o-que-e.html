@@ -3,17 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#053B2E">
   <title>O que é | Célula vegetal</title>
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌿</text></svg>">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="index.css">
 </head>
 <body>
 
   <header class="menu">
-    <nav>
+    <nav aria-label="Menu principal">
       <a href="index.html">Início</a>
-      <a href="o-que-e.html" class="ativo">O que é</a>
+      <a href="o-que-e.html" class="ativo" aria-current="page">O que é</a>
       <a href="estruturas.html">Estruturas</a>
       <a href="comparacao.html">Vegetal x animal</a>
       <a href="sobre.html">Sobre</a>
@@ -22,14 +28,39 @@
 
   <main class="conteudo">
     <h1>o que é</h1>
+
     <p>A célula vegetal é a unidade básica de estrutura e funcionamento dos vegetais. Ela é <strong>eucarionte</strong>: o material genético (DNA) fica protegido dentro de um núcleo, e o interior é dividido em organelas, cada uma com uma função.</p>
+
     <p>Três características a diferenciam da célula animal:</p>
     <ul>
       <li><strong>Parede celular:</strong> camada rígida de celulose que dá forma e sustentação.</li>
       <li><strong>Cloroplastos:</strong> fazem a fotossíntese, que produz o alimento da célula.</li>
       <li><strong>Vacúolo central grande:</strong> guarda água e, ao ficar cheio, mantém a célula firme.</li>
     </ul>
+
     <p>É por causa dessas estruturas que, em grande maioria, as plantas se sustentam.</p>
+
+    <section>
+      <h2>Observação no microscópio</h2>
+      <p>Fotos que tiramos na aula prática de Biologia, observando células vegetais ao microscópio.</p>
+
+      <div class="galeria">
+        <figure>
+          <a href="imagens/microscopio-1.jpg" target="_blank" rel="noopener">
+            <img src="imagens/microscopio-1.jpg" alt="Células vegetais vistas ao microscópio" loading="lazy">
+          </a>
+          <figcaption>[Legenda: o que aparece na foto e o aumento usado]</figcaption>
+        </figure>
+
+        <figure>
+          <a href="imagens/microscopio-2.jpg" target="_blank" rel="noopener">
+            <img src="imagens/microscopio-2.jpg" alt="Outra imagem de células vegetais ao microscópio" loading="lazy">
+          </a>
+          <figcaption>[Legenda: o que aparece na foto e o aumento usado]</figcaption>
+        </figure>
+      </div>
+    </section>
+
     <a class="botao" href="estruturas.html">Conhecer as estruturas</a>
   </main>
 
