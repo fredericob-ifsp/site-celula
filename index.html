@@ -3,16 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Conheça as estruturas da célula vegetal, o que cada uma faz e o que a diferencia da célula animal.">
+  <meta name="theme-color" content="#053B2E">
   <title>Célula vegetal</title>
+
+  <!-- ícone da aba do navegador -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌿</text></svg>">
+
+  <!-- fontes -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- estilo -->
   <link rel="stylesheet" href="index.css">
 </head>
 <body>
 
   <header class="menu">
-    <nav>
-      <a href="index.html" class="ativo">Início</a>
+    <nav aria-label="Menu principal">
+      <a href="index.html" class="ativo" aria-current="page">Início</a>
       <a href="o-que-e.html">O que é</a>
       <a href="estruturas.html">Estruturas</a>
       <a href="comparacao.html">Vegetal x animal</a>
@@ -21,42 +31,70 @@
   </header>
 
   <main class="inicio">
+
     <div class="texto">
       <h1>célula vegetal</h1>
-      <p>A célula vegetal faz fotossíntese, guarda água e sustenta o corpo das plantas. Neste site você conhece as estruturas que a formam e o que cada uma faz.</p>
+      <p>Toda planta é feita de células, e cada uma funciona como uma pequena fábrica. Dentro da célula vegetal, estruturas diferentes trabalham juntas: captam a luz do sol, produzem energia, guardam água e mantêm o formato da célula.</p>
+      <p>Neste site você vai conhecer cada uma dessas estruturas, entender o que ela faz e ver o que diferencia a célula vegetal da célula animal.</p>
       <a class="botao" href="estruturas.html">Ver as estruturas</a>
     </div>
 
     <div class="ilustracao">
-      <svg viewBox="0 0 400 400" role="img" aria-label="Desenho de uma célula vegetal">
+      <svg viewBox="0 0 400 400" role="img" aria-labelledby="titulo-celula">
+        <title id="titulo-celula">Desenho de uma célula vegetal com parede celular, membrana, vacúolo, núcleo, cloroplastos, mitocôndrias, retículo endoplasmático, complexo golgiense e ribossomos</title>
+
+        <!-- parede celular -->
         <rect x="12" y="12" width="376" height="376" rx="34" fill="#5FA867" stroke="#14352B" stroke-width="3"/>
+
+        <!-- membrana plasmática e citoplasma -->
         <rect x="30" y="30" width="340" height="340" rx="24" fill="#E3F1D8" stroke="#2F7D3A" stroke-width="3"/>
+
+        <!-- vacúolo central -->
         <ellipse cx="130" cy="215" rx="85" ry="115" fill="#9ED0DE" stroke="#4B93A8" stroke-width="3"/>
+
+        <!-- núcleo e nucléolo -->
         <circle cx="280" cy="110" r="45" fill="#F0C4A8" stroke="#A8684A" stroke-width="3"/>
         <circle cx="288" cy="104" r="14" fill="#A8684A"/>
-        <path d="M228 70 C212 90 236 112 220 134 C206 154 228 170 240 160" fill="none" stroke="#7B4FA0" stroke-width="7" stroke-linecap="round"/>
-        <path d="M232 168 C250 186 280 178 300 190 C318 200 330 188 340 176" fill="none" stroke="#7B4FA0" stroke-width="7" stroke-linecap="round"/>
-        <g fill="#14352B">
-          <circle cx="222" cy="92" r="4"/><circle cx="214" cy="116" r="4"/><circle cx="222" cy="146" r="4"/>
-          <circle cx="260" cy="182" r="4"/><circle cx="296" cy="184" r="4"/><circle cx="326" cy="188" r="4"/>
+
+        <!-- retículo endoplasmático -->
+        <g fill="none" stroke="#7B4FA0" stroke-width="7" stroke-linecap="round">
+          <path d="M228 70 C212 90 236 112 220 134 C206 154 228 170 240 160"/>
+          <path d="M232 168 C250 186 280 178 300 190 C318 200 330 188 340 176"/>
         </g>
+
+        <!-- ribossomos -->
+        <g fill="#14352B">
+          <circle cx="222" cy="92" r="4"/>
+          <circle cx="214" cy="116" r="4"/>
+          <circle cx="222" cy="146" r="4"/>
+          <circle cx="260" cy="182" r="4"/>
+          <circle cx="296" cy="184" r="4"/>
+          <circle cx="326" cy="188" r="4"/>
+        </g>
+
+        <!-- complexo golgiense -->
         <g fill="none" stroke="#D2793B" stroke-width="7" stroke-linecap="round">
           <path d="M262 250 Q300 238 338 250"/>
           <path d="M258 268 Q300 256 342 268"/>
           <path d="M262 286 Q300 274 338 286"/>
         </g>
+
+        <!-- cloroplastos -->
         <g fill="#2F7D3A" stroke="#14352B" stroke-width="2">
           <ellipse cx="275" cy="335" rx="30" ry="15" transform="rotate(-10 275 335)"/>
           <ellipse cx="335" cy="215" rx="16" ry="28" transform="rotate(15 335 215)"/>
           <ellipse cx="70" cy="90" rx="30" ry="15" transform="rotate(20 70 90)"/>
           <ellipse cx="190" cy="62" rx="28" ry="14" transform="rotate(-5 190 62)"/>
         </g>
+
+        <!-- mitocôndrias -->
         <g fill="#F08A7E" stroke="#B5473B" stroke-width="2">
           <ellipse cx="215" cy="300" rx="22" ry="11" transform="rotate(25 215 300)"/>
           <ellipse cx="62" cy="345" rx="22" ry="11" transform="rotate(-20 62 345)"/>
         </g>
       </svg>
     </div>
+
   </main>
 
   <footer>IFSP, Campus Bragança Paulista. Biologia, 4º bimestre de 2026.</footer>
