@@ -12,43 +12,54 @@
 
   <header class="menu">
     <nav>
-      <a href="#inicio">Início</a>
-      <a href="#o-que-e">O que é</a>
-      <a href="#estruturas">Estruturas</a>
-      <a href="#comparacao">Vegetal x animal</a>
-      <a href="#sobre">Sobre</a>
+      <a href="index.html" class="ativo">Início</a>
+      <a href="o-que-e.html">O que é</a>
+      <a href="estruturas.html">Estruturas</a>
+      <a href="comparacao.html">Vegetal x animal</a>
+      <a href="sobre.html">Sobre</a>
     </nav>
   </header>
 
-  <main>
-    <section id="inicio" class="inicio">
-      <div class="texto">
-        <h1>célula vegetal</h1>
-        <p>A célula vegetal faz fotossíntese, guarda água e sustenta o corpo das plantas. Neste site você conhece as estruturas que a formam e o que cada uma faz.</p>
-      </div>
-      <div class="ilustracao">a ilustração entra aqui</div>
-    </section>
+  <main class="inicio">
+    <div class="texto">
+      <h1>célula vegetal</h1>
+      <p>A célula vegetal faz fotossíntese, guarda água e sustenta o corpo das plantas. Neste site você conhece as estruturas que a formam e o que cada uma faz.</p>
+      <a class="botao" href="estruturas.html">Ver as estruturas</a>
+    </div>
 
-    <section id="o-que-e">
-      <h2>O que é</h2>
-      <p>Em breve.</p>
-    </section>
-
-    <section id="estruturas">
-      <h2>Estruturas da célula</h2>
-      <p>Em breve.</p>
-    </section>
-
-    <section id="comparacao">
-      <h2>Vegetal x animal</h2>
-      <p>Em breve.</p>
-    </section>
-
-    <section id="sobre">
-      <h2>Sobre</h2>
-      <p>Em breve.</p>
-    </section>
+    <div class="ilustracao">
+      <svg viewBox="0 0 400 400" role="img" aria-label="Desenho de uma célula vegetal">
+        <rect x="12" y="12" width="376" height="376" rx="34" fill="#5FA867" stroke="#14352B" stroke-width="3"/>
+        <rect x="30" y="30" width="340" height="340" rx="24" fill="#E3F1D8" stroke="#2F7D3A" stroke-width="3"/>
+        <ellipse cx="130" cy="215" rx="85" ry="115" fill="#9ED0DE" stroke="#4B93A8" stroke-width="3"/>
+        <circle cx="280" cy="110" r="45" fill="#F0C4A8" stroke="#A8684A" stroke-width="3"/>
+        <circle cx="288" cy="104" r="14" fill="#A8684A"/>
+        <path d="M228 70 C212 90 236 112 220 134 C206 154 228 170 240 160" fill="none" stroke="#7B4FA0" stroke-width="7" stroke-linecap="round"/>
+        <path d="M232 168 C250 186 280 178 300 190 C318 200 330 188 340 176" fill="none" stroke="#7B4FA0" stroke-width="7" stroke-linecap="round"/>
+        <g fill="#14352B">
+          <circle cx="222" cy="92" r="4"/><circle cx="214" cy="116" r="4"/><circle cx="222" cy="146" r="4"/>
+          <circle cx="260" cy="182" r="4"/><circle cx="296" cy="184" r="4"/><circle cx="326" cy="188" r="4"/>
+        </g>
+        <g fill="none" stroke="#D2793B" stroke-width="7" stroke-linecap="round">
+          <path d="M262 250 Q300 238 338 250"/>
+          <path d="M258 268 Q300 256 342 268"/>
+          <path d="M262 286 Q300 274 338 286"/>
+        </g>
+        <g fill="#2F7D3A" stroke="#14352B" stroke-width="2">
+          <ellipse cx="275" cy="335" rx="30" ry="15" transform="rotate(-10 275 335)"/>
+          <ellipse cx="335" cy="215" rx="16" ry="28" transform="rotate(15 335 215)"/>
+          <ellipse cx="70" cy="90" rx="30" ry="15" transform="rotate(20 70 90)"/>
+          <ellipse cx="190" cy="62" rx="28" ry="14" transform="rotate(-5 190 62)"/>
+        </g>
+        <g fill="#F08A7E" stroke="#B5473B" stroke-width="2">
+          <ellipse cx="215" cy="300" rx="22" ry="11" transform="rotate(25 215 300)"/>
+          <ellipse cx="62" cy="345" rx="22" ry="11" transform="rotate(-20 62 345)"/>
+        </g>
+      </svg>
+    </div>
   </main>
+
+  <footer>IFSP, Campus Bragança Paulista. Biologia, 4º bimestre de 2026.</footer>
 
 </body>
 </html>
