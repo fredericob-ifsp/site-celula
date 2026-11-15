@@ -1,0 +1,66 @@
+* { box-sizing: border-box; margin: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: "Nunito", sans-serif;
+  color: #fff;
+  line-height: 1.6;
+  background: linear-gradient(160deg, #053B2E 0%, #0B6B4A 55%, #1F8A5A 100%);
+  background-attachment: fixed;
+}
+
+/* menu */
+.menu {
+  position: sticky;
+  top: 0;
+  background: rgba(0, 0, 0, 0.35);
+}
+nav {
+  display: flex;
+  gap: 28px;
+  padding: 16px 40px;
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+}
+nav a:hover { text-decoration: underline; }
+
+/* seções */
+section {
+  padding: 80px 40px;
+  scroll-margin-top: 60px;
+}
+h2 { font-size: 2rem; margin-bottom: 12px; }
+
+/* início */
+.inicio {
+  min-height: 90vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+h1 {
+  font-family: "Gochi Hand", cursive;
+  font-weight: 400;
+  font-size: clamp(3rem, 8vw, 6rem);
+  line-height: 1;
+  margin-bottom: 20px;
+}
+.ilustracao {
+  border: 2px dashed rgba(255, 255, 255, 0.5);
+  border-radius: 16px;
+  min-height: 320px;
+  display: grid;
+  place-items: center;
+}
+
+/* celular */
+@media (max-width: 800px) {
+  .inicio { grid-template-columns: 1fr; }
+  nav { flex-wrap: wrap; gap: 12px 20px; padding: 12px 20px; }
+  section { padding: 56px 20px; }
+}
