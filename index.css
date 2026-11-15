@@ -148,6 +148,14 @@ p {
   font-size: 1.12rem;
 }
 
+.ilustracao {
+  margin: 0;
+  background: none;
+  border: 0;
+  border-radius: 0;
+  overflow: visible;
+}
+
 .ilustracao img {
   display: block;
   width: 100%;
@@ -158,6 +166,14 @@ p {
   border-radius: 24px;
   border: 4px solid var(--amarelo);
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
+}
+
+.ilustracao figcaption {
+  max-width: 480px;
+  margin: 14px auto 0;
+  padding: 0;
+  font-size: 0.92rem;
+  text-align: center;
 }
 
 .conteudo {
