@@ -470,3 +470,11 @@ footer {
     transition: none !important;
   }
 }
+
+.galeria.retrato {
+  max-width: 760px;
+}
+
+.galeria.retrato img {
+  aspect-ratio: 3 / 4;
+}
