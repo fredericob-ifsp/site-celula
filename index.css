@@ -414,3 +414,27 @@ footer {
     transition: none !important;
   }
 }
+
+.curiosidade {
+  max-width: 65ch;
+  margin: 32px 0;
+  padding: 22px 26px;
+  background: var(--vidro);
+  border: 1px solid var(--vidro-borda);
+  border-left: 6px solid var(--amarelo);
+  border-radius: var(--raio);
+}
+
+.curiosidade h2 {
+  margin-top: 0;
+  color: var(--amarelo);
+}
+
+.curiosidade p:last-child {
+  margin-bottom: 0;
+}
+
+.curiosidade em {
+  color: var(--amarelo);
+  font-style: italic;
+}
