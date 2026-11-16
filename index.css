@@ -448,3 +448,9 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+
+figcaption strong {
+  display: block;
+  margin-bottom: 4px;
+  color: var(--amarelo);
+}
