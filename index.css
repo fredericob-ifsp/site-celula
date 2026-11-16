@@ -438,3 +438,13 @@ footer {
   color: var(--amarelo);
   font-style: italic;
 }
+
+.galeria.duas {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+@media (max-width: 600px) {
+  .galeria.duas {
+    grid-template-columns: 1fr;
+  }
+}
