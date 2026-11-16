@@ -478,3 +478,7 @@ footer {
 .galeria.retrato img {
   aspect-ratio: 3 / 4;
 }
+
+.destaque.retrato {
+  max-width: 420px;
+}
