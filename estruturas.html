@@ -3,18 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#053B2E">
   <title>Estruturas | Célula vegetal</title>
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌿</text></svg>">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="index.css">
 </head>
 <body>
 
   <header class="menu">
-    <nav>
+    <nav aria-label="Menu principal">
       <a href="index.html">Início</a>
       <a href="o-que-e.html">O que é</a>
-      <a href="estruturas.html" class="ativo">Estruturas</a>
+      <a href="estruturas.html" class="ativo" aria-current="page">Estruturas</a>
       <a href="comparacao.html">Vegetal x animal</a>
       <a href="sobre.html">Sobre</a>
     </nav>
@@ -22,52 +28,129 @@
 
   <main class="conteudo">
     <h1>estruturas</h1>
-    <p>Cada parte da célula tem uma função. As marcadas em amarelo existem só na célula vegetal.</p>
+
+    <p>Cada parte da célula tem uma função. As etiquetas mostram o que é exclusivo da célula vegetal e o que está representado na nossa maquete.</p>
+
+    <p class="legenda-tags">
+      <span class="tag">só na vegetal</span> não existe na célula animal.
+      <span class="tag maquete">está na maquete</span> aparece com etiqueta na nossa maquete.
+    </p>
 
     <div class="cards">
-      <article class="card">
-        <span class="tag">só na vegetal</span>
+
+      <article class="card vegetal">
+        <div class="tags">
+          <span class="tag">só na vegetal</span>
+          <span class="tag maquete">está na maquete</span>
+        </div>
         <h2>Parede celular</h2>
         <p>Camada rígida de celulose por fora da membrana. Dá forma à célula, protege e sustenta a planta.</p>
       </article>
+
       <article class="card">
+        <div class="tags">
+          <span class="tag maquete">está na maquete</span>
+        </div>
         <h2>Membrana plasmática</h2>
         <p>Película fina de lipídios e proteínas que envolve o citoplasma. Controla o que entra e o que sai da célula.</p>
       </article>
+
       <article class="card">
+        <div class="tags">
+          <span class="tag maquete">está na maquete</span>
+        </div>
         <h2>Citoplasma</h2>
         <p>Meio gelatinoso (citosol) onde ficam as organelas. Muitas reações químicas da célula acontecem nele.</p>
       </article>
+
       <article class="card">
+        <div class="tags">
+          <span class="tag maquete">está na maquete</span>
+        </div>
         <h2>Núcleo</h2>
-        <p>Guarda o DNA e comanda as atividades da célula. Dentro dele há o nucléolo, que fabrica as partes dos ribossomos.</p>
+        <p>Guarda o DNA e comanda as atividades da célula. É envolvido por uma membrana dupla com poros, o envoltório nuclear.</p>
       </article>
+
       <article class="card">
-        <span class="tag">só na vegetal</span>
-        <h2>Cloroplastos</h2>
-        <p>Contêm clorofila e fazem a fotossíntese: usam luz, água e gás carbônico para produzir glicose e liberar oxigênio.</p>
+        <div class="tags">
+          <span class="tag maquete">está na maquete</span>
+        </div>
+        <h2>Nucléolo</h2>
+        <p>Região dentro do núcleo onde são produzidos os componentes dos ribossomos.</p>
       </article>
+
       <article class="card">
-        <span class="tag">só na vegetal</span>
-        <h2>Vacúolo central</h2>
-        <p>Grande bolsa cheia de água, sais e açúcares. Mantém a célula túrgida, isto é, firme, e armazena substâncias.</p>
-      </article>
-      <article class="card">
-        <h2>Mitocôndrias</h2>
-        <p>Fazem a respiração celular e produzem ATP, a energia que a célula usa. Plantas também têm mitocôndrias.</p>
-      </article>
-      <article class="card">
+        <div class="tags">
+          <span class="tag maquete">está na maquete</span>
+        </div>
         <h2>Retículo endoplasmático</h2>
         <p>Rede de tubos e bolsas. O rugoso tem ribossomos e participa da produção de proteínas. O liso produz lipídios e ajuda na desintoxicação.</p>
       </article>
+
       <article class="card">
-        <h2>Complexo golgiense</h2>
-        <p>Recebe substâncias do retículo, modifica, empacota em vesículas e envia para onde a célula precisa.</p>
-      </article>
-      <article class="card">
+        <div class="tags">
+          <span class="tag maquete">está na maquete</span>
+        </div>
         <h2>Ribossomos</h2>
         <p>Pequenos grânulos que montam as proteínas. Ficam soltos no citoplasma ou presos ao retículo rugoso.</p>
       </article>
+
+      <article class="card">
+        <div class="tags">
+          <span class="tag maquete">está na maquete</span>
+        </div>
+        <h2>Complexo golgiense</h2>
+        <p>Também chamado de aparelho de Golgi. Recebe substâncias do retículo, modifica, empacota em vesículas e envia para onde a célula precisa.</p>
+      </article>
+
+      <article class="card">
+        <div class="tags">
+          <span class="tag maquete">está na maquete</span>
+        </div>
+        <h2>Mitocôndrias</h2>
+        <p>Fazem a respiração celular e produzem ATP, a energia que a célula usa. Plantas também têm mitocôndrias.</p>
+      </article>
+
+      <article class="card vegetal">
+        <div class="tags">
+          <span class="tag">só na vegetal</span>
+          <span class="tag maquete">está na maquete</span>
+        </div>
+        <h2>Cloroplastos</h2>
+        <p>Contêm clorofila e fazem a fotossíntese: usam luz, água e gás carbônico para produzir glicose e liberar oxigênio.</p>
+      </article>
+
+      <article class="card vegetal">
+        <div class="tags">
+          <span class="tag">só na vegetal</span>
+          <span class="tag maquete">está na maquete</span>
+        </div>
+        <h2>Amiloplasto</h2>
+        <p>Plastídio que armazena amido, a reserva de energia da planta. É comum em raízes, caules e sementes.</p>
+      </article>
+
+      <article class="card vegetal">
+        <div class="tags">
+          <span class="tag">só na vegetal</span>
+          <span class="tag maquete">está na maquete</span>
+        </div>
+        <h2>Vacúolo central</h2>
+        <p>Grande bolsa cheia de água, sais e açúcares. Mantém a célula túrgida, isto é, firme, e armazena substâncias.</p>
+      </article>
+
+      <article class="card">
+        <h2>Peroxissomos</h2>
+        <p>Pequenas vesículas que decompõem o peróxido de hidrogênio (água oxigenada), produzido no metabolismo da célula.</p>
+      </article>
+
+      <article class="card vegetal">
+        <div class="tags">
+          <span class="tag">só na vegetal</span>
+        </div>
+        <h2>Plasmodesmos</h2>
+        <p>Canais finos que atravessam a parede celular e ligam o citoplasma de células vizinhas, permitindo a troca de substâncias.</p>
+      </article>
+
     </div>
   </main>
 
